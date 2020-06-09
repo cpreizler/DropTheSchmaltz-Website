@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta charset="UTF-8">	
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Drop The Schmaltz-Contact Us</title>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel = "icon" type = "image/png" href = "muscle.png">
+</head>
+<body>
+<div id="app">
+ <!--Begin standard header,logo and menu items-->
+ <site-header page-name="Contact Us"></site-header>
+ <!--End standard header,logo and menu items-->
+</div>
+
+    <div id="con" class="basic"> 
+        <h3>Fill out the fields below to email us with your inquiry.</h3>
+        <h4>You can also send us your confessions of all the junk food items you ate today.</h4>
+        <h5>Confess your sweettooth sins, it will set you free to fly!</h5>
+        <div class="form">
+        <form class="innerform">
+            <label for="name">Name:<span class="required">*</span> </label>       
+            <input id="name" v-model="uname" placeholder="John Doe"> 
+            <span class="required"></span>
+            <br>
+
+            <label for="email">Email:<span class="required">*</span> </label>       
+            <input id="email" v-model="uemail" placeholder="John@example.com"> 
+            <span class="required"></span>
+            <br>
+
+            <label for="phone">Phone:<span class="required">*</span> </label>       
+            <input id="phone" v-model="uphone" placeholder="111-222-3333"> 
+            <span class="required"></span>
+            <br>
+
+            <label for="subject">Subject:<span class="required">*</span> </label>       
+            <input id="subject" v-model="usubject">
+            <span class="required"></span>
+            <br>
+
+            <label for="message">Message:<span class="required">*</span> </label> 
+            <input style="height: 20%;" id="message" v-model="umessage"> 
+            <span class="required"></span>
+            <br>
+
+            <button  @click ="sub" type='button'>Submit</button>
+            <span>
+                <p style="margin: 10px" v-show="bye">Thank you, {{ uname }} for contacting us! A skinny pig will get back to {{ uemail }} shortly.</p>
+            </span>
+        </form>
+    </div>
+    </div>
+    <h3>Find us on the Map!</h3>
+    <div id="map"></div>
+
+    <div id="foot">
+		<!-- Footer -->
+		<site-footer></site-footer>
+		<!-- Footer -->
+		</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="header.js"></script>
+    <script src="footer.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
