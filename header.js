@@ -1,14 +1,14 @@
 Vue.component('site-header', {
 	template: `<header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="home.html">Drop The Schmaltz <img src="muscle.png" width="50" height="50" alt="muscle"> </a>
+        <a class="navbar-brand" href="index.html">Drop The Schmaltz <img src="muscle.png" width="50" height="50" alt="muscle"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="motivation.html">Motivation</a></li>                     
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="Women" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women</a>
