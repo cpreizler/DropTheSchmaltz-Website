@@ -1,7 +1,7 @@
 Vue.component('site-header', {
 	template: `<header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html">Drop The Schmaltz <img src="muscle.png" width="50" height="50" alt="muscle"> </a>
+        <a class="navbar-brand" href="index.html">Drop The Schmaltz <img src="https://www.freeiconspng.com/uploads/muscle-icon-10.png" width="50" height="50" alt="muscle"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
